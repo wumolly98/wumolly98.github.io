@@ -15,17 +15,21 @@ h2{
 
 }
 
-p{
+p {
+    display: none;
 	font-size: 24px; 
     padding-top: 20px;
+
 }
+
 
 /*1 & 2*/
 
 body {
-      font-family: "Lucida Grande", sans-serif;
+    font-family: "Lucida Grande", sans-serif;
   background-color: black;
     color: #ffffff
+
 }
 /*3*/
 img {
@@ -36,7 +40,7 @@ img {
 
 /*4*/
 div {
-    min-height: 150 px;
+    min-height: 150px;
     padding: 25px;
     
 }
