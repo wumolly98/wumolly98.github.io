@@ -9,7 +9,7 @@ Make sure to learn what the starter code does!!
 */
 
 body{
-    background:#DDDDDD url(../images/pigeon_background.jpeg);
+    background:#DDDDDD url(../images/pigeon-background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -66,7 +66,7 @@ thead{
     vertical-align: middle; 
 }
 .colhead{
-  background-color: #7e0830;
+  background-color: #7e0820;
   color: #FFFFFF;
     min-width: 125px;
     padding: 10px;
