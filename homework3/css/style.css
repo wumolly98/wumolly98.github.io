@@ -10,9 +10,7 @@ Make sure to learn what the starter code does!!
 
 body{
     background:#DDDDDD url(../images/pigeon_background.jpeg);
-    background-repeat: no-repeat;
-
-
+    background-repeat: non-repeat;
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
@@ -29,8 +27,7 @@ h1{
   color: #c12258;
   font-size: 2em;
     text-align: center;
-    line-height: 2;
-    
+    line-height: 2;  
 }
 
 caption{
@@ -39,12 +36,14 @@ caption{
 
 p{
 padding-top: 15px;
+font-family: 'Andika', sans-serif;
 }
 
 
 a{
-font-size: 16px;
 color: #C12258;
+font-size: 16px;
+font-family: 'Andika', sans-serif;
 text-decoration-line: underline;
 text-decoration-style: wavy;
 }
@@ -83,7 +82,7 @@ th.colhead:last-child{
     border-top-right-radius: 10px;
 }
 
-th.rowhead:first-child td: last-child{
+th.rowhead: (10){
     border-bottom-left-radius: 20px;
 }
 
@@ -96,12 +95,7 @@ th.rowhead:first-child td: last-child{
 }
 
 td{
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-
-
+    padding: 10px;
     border-top: 2px solid #000000; 
     text-align: middle; 
 }
@@ -114,14 +108,12 @@ tr {
     background-color: #D1D1D1;
 }
 
-
-
-tr: last-child td:last-child{
-    border-bottom-right-radius: 10px;
+tr:last-child.rowhead{
+    border-bottom-left-radius: 30px;
     border-color: #000000;
 }
 
-tr: nth-child(even){
+tr:nth-child(even){
     background-color: #D1D1D1;
 } 
 tr:nth-child(odd){
@@ -137,9 +129,6 @@ border: 3px dashed #417243;
 }
 
 
-tbody tr:last-child th:first-child{
-    border-bottom-left-radius: 20px black;
-}
 
 
 footer{
@@ -150,5 +139,8 @@ min-height: 75px;
   color: #FFFFFF;
     position: absolute;
     bottom: 0;
-    width: 100%
+    width: 100%;
+    
+        
+    
 }
