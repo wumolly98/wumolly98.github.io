@@ -1,16 +1,18 @@
+
 /*STARTER CODE*/
 
 /*
 We have started some of the selectors for you.
 For others we have provided hints on what the selectors should be.
 There are some missing selectors.
-
 Make sure to learn what the starter code does!!
 */
 
 body{
     background:#DDDDDD url(../images/pigeon_background.jpeg);
-    background-repeat: non-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
@@ -27,7 +29,8 @@ h1{
   color: #c12258;
   font-size: 2em;
     text-align: center;
-    line-height: 2;  
+    line-height: 2;
+    
 }
 
 caption{
@@ -36,14 +39,12 @@ caption{
 
 p{
 padding-top: 15px;
-font-family: 'Andika', sans-serif;
 }
 
 
 a{
-color: #C12258;
 font-size: 16px;
-font-family: 'Andika', sans-serif;
+color: #B92751;
 text-decoration-line: underline;
 text-decoration-style: wavy;
 }
@@ -82,7 +83,7 @@ th.colhead:last-child{
     border-top-right-radius: 10px;
 }
 
-th.rowhead: (10){
+th.rowhead:first-child td: last-child{
     border-bottom-left-radius: 20px;
 }
 
@@ -95,7 +96,12 @@ th.rowhead: (10){
 }
 
 td{
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
     border-top: 2px solid #000000; 
     text-align: middle; 
 }
@@ -108,12 +114,13 @@ tr {
     background-color: #D1D1D1;
 }
 
-tr:last-child.rowhead{
-    border-bottom-left-radius: 30px;
+
+tr: last-child td:last-child{
+    border-bottom-right-radius: 10px;
     border-color: #000000;
 }
 
-tr:nth-child(even){
+tr: nth-child(even){
     background-color: #D1D1D1;
 } 
 tr:nth-child(odd){
@@ -129,6 +136,9 @@ border: 3px dashed #417243;
 }
 
 
+tbody tr:last-child th:first-child{
+    border-bottom-left-radius: 20px black;
+}
 
 
 footer{
@@ -137,10 +147,8 @@ min-height: 75px;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    
-        
-    
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
