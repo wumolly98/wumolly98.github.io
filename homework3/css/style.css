@@ -9,8 +9,10 @@ Make sure to learn what the starter code does!!
 */
 
 body{
-     background-color: #DDDDDD;
-    background-image: url(../images/pigeon_background.jpeg);
+    background:#DDDDDD url(../images/pigeon_background.jpeg);
+    background-repeat: no-repeat;
+
+
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
@@ -21,6 +23,7 @@ body{
 main{
   margin-bottom: 100px;
 }
+
 
 h1{
   color: #c12258;
@@ -53,35 +56,53 @@ table{
     border: 2px solid #000000;
     border-radius: 10px;
 }
-
+thead{
+    min-width: 125px;
+    padding: 10px;
+    background-color: #7e0830;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle; 
+}
 .colhead{
   background-color: #7e0830;
   color: #FFFFFF;
-    min-width: 125 px;
-    padding: 25 px;
+    min-width: 125px;
+    padding: 10px;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle; 
 }
 
 .colhead:first-child{
-    border-top-left-radius: 9px;
+    border-top-left-radius: 10px;
 }
+
 th.colhead:last-child{
-    border-top-right-radius: 9px;
+    border-top-right-radius: 10px;
 }
+
+th.rowhead:first-child td: last-child{
+    border-bottom-left-radius: 20px;
+}
+
 
 .rowhead{
     border-right: 2px solid #000000;
-    border-left: 2px solid #000000; 
-    border-bottom: 2px solid #000000; 
+    border-left: 0px solid #000000; 
+    border-top: 2px solid #000000; 
     vertical-align: middle;
 }
 
 td{
-    padding: 10px;
-    border-top: 2px #000000;
-    border-bottom: 2px solid #000000; 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+    border-top: 2px solid #000000; 
     text-align: middle; 
 }
 
@@ -93,13 +114,6 @@ tr {
     background-color: #D1D1D1;
 }
 
-
-tfoot tr:last-child td:first-child {
-  border-bottom-left-radius: 10px;
-}
-tfoot tr:last-child td:last-child {
-  border-bottom-right-radius: 10px;
-}
 
 
 tr: last-child td:last-child{
@@ -118,15 +132,16 @@ tr:hover{
     background: rgba(126, 8, 32,.25);
     opacity: .25;
 }
-* :focus {
+*:focus{
 border: 3px dashed #417243;
 }
 
-thead tr:first-child th:first-child{
-    border-top-left-radius: 5px black;
+
+tbody tr:last-child th:first-child{
+    border-bottom-left-radius: 20px black;
 }
 
-}
+
 footer{
 min-height: 75px;
   width:100%;
