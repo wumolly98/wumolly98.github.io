@@ -35,6 +35,10 @@ nav a{
   text-decoration: none; 
 }
 
+.!class{
+    display: grid;
+}
+
 a:hover {
   text-decoration: underline;
 }
@@ -57,7 +61,7 @@ a:hover {
     top: -40px;
 }
 
-input: focus{
+input:focus{
     position: absolute;
     border: 2px;
 }
@@ -92,6 +96,7 @@ header{
   background-size: cover;       /* Parallax effect */
   color: white;
   height: 400px;                /* Parallax effect */
+    
 
 
  
@@ -106,31 +111,31 @@ header p{
   padding: 0 100px;
   text-align: center;
 }
-
+.about, .method, .clients, .contact{
+    grid-column: 2/ span 1;
+    
+}
 .about-image, .method-image, .clients-image, .contact-image{
-column-span: all;
-max-height: 700 px;
+    max-height: 700px;
+    grid-column: 1/-1;
+overflow: hidden;
 }
 
 .about, .about-image{
-    grid-column: 2/span 1;
     grid-row: 2 /span 1;
 }
 
 .method, .method-image{
-    grid-column: 2/span 1;
     grid-row: 3 /span 1;
 }
 
 
 .clients, .clients-image{
-    grid-column: 2/span 1;
     grid-row: 4 /span 1;
 }
 
 
 .contact, .contact-image{
-    grid-column: 2/span 1;
     grid-row: 5 /span 1;
 }
 
@@ -138,7 +143,8 @@ max-height: 700 px;
 background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-text-align: center;
+    align-self: center;
+
 }
 
 

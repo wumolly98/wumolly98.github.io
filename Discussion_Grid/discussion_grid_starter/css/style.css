@@ -8,7 +8,9 @@ h1{
   text-align: center;
   line-height: 2;
 }
-
+.!class{
+    display: grid;
+}
 .container{
   display: grid;
   grid-template-columns: 1 fr 1fr;
