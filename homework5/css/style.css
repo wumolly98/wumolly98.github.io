@@ -222,10 +222,42 @@ header{
 @media print { 
   .card {
     flex-basis: 200px;
+ }
+    body:{
+        background-image: none;
+        
+    }
+    .pricing{
+    min-height: 500px;
+    /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+  
+}
+    
+.gallery{
+    display: none;
+
+
+    
+}
   }
+  
   /*Your code here again.*/
   /*You will want four selectors*/  
-}
+
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) { 
+#logo{
+    animation-name: logo_wiggle;
+    animation-duration: 0s;
+ 
+}
+}
