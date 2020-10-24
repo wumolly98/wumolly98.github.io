@@ -78,6 +78,8 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    
   
 }
 
@@ -89,9 +91,6 @@ footer{
   /*Your code here.*/
   /*Take a look at flex-basis  DONE?*/ 
     flex-basis: 400px;
-
-
-
 }
 
 .card > header{
@@ -137,6 +136,11 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
 }
 
 .gallery > img{
@@ -150,13 +154,19 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 
 .nav_links{
   /*Your code here again.*/
-        align-items: center;
+    align-items: center;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 
@@ -177,6 +187,7 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+      flex-basis: 225px;
   }
 
   .card_big{
@@ -186,10 +197,20 @@ header{
 
   /* Navbar */
   header{
+      
     /*Your code here again.*/  
+          display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav_links{
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     /*Your code here again.*/  
   }
 
