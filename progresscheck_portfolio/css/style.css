@@ -1,0 +1,255 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+}
+
+h1{
+font-family: 'Calistoga', cursive;
+
+  font-size: 4em;
+  text-align: center;
+  line-height: 2;
+    color: #476AF4;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+}
+
+p {
+  padding: 0 30px;
+text-align: center;}
+
+h2#gallery{
+  font-size: 1.8em;
+  text-align: center;
+  padding: 50px;
+}
+    
+landing{
+
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+background-image: url(../images/atmydesk.png);
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+landing p{
+  color: black;
+  font-size: 24px;
+  padding: 100px;
+  text-align: center;
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.!class{
+    display: grid;
+}
+.container{
+display: grid;
+grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 15px;
+}
+
+.about, .contact{
+    grid-column: 2/ span 1;
+    
+    
+}
+.about-image, .contact-image{
+    display: grid;
+    max-height: 700px;
+    grid-column: 1/-1;
+overflow: hidden;
+}
+
+.about, .about-image{
+    grid-row: 2 /span 1;
+}
+
+
+
+.contact, .contact-image{
+    grid-row: 5 /span 1;
+}
+
+.text-block{
+background-color: rgba(255, 255, 255, .8);
+
+}
+  padding: 30px;
+    align-self: center;
+
+}
+
+/*Begin your code here*/
+/*Keyframes for animation*/
+
+@-webkit-keyframes logo_wiggle{
+  /*Your code here.*/
+
+}
+
+@keyframes logo_wiggle{
+    from {width: 25px;}
+    to {width: 50px;}
+} 
+
+#logo{
+    animation-name: logo_wiggle;
+    animation-duration: 3s;
+    padding: 20px;
+ 
+}
+
+
+
+
+.gallery{
+  min-height: 600px;
+  /*Your code here again.*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery > img{
+  margin: 10px;
+  width: 300px;
+}
+
+
+header{
+  background: #fff;
+  border-bottom: 3px solid #476AF4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav_links{
+    align-items: center;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover{
+    color: #476AF4;
+} 
+.nav_item a:focus{
+  color: #476AF4;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+}
+
+
+@media screen and (min-width: 850px){
+
+
+
+
+
+
+  header{
+      
+    /*Your code here again.*/  
+          display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*Your code here again.*/  
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+@media print { 
+  .card {
+    flex-basis: 200px;
+ }
+    body:{
+        background-image: none;
+        
+    }
+
+    #gallery{
+        display: none;
+    }
+.gallery{
+    display: none;
+
+
+    
+}
+  }
+  
+  /*Your code here again.*/
+  /*You will want four selectors*/  
+
+
+/*Your code here again.*/ 
+/*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) { 
+#logo{
+    animation-name: logo_wiggle;
+    animation-duration: 0s;
+ 
+}
+}
