@@ -1,0 +1,584 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+h1{
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 48px;
+  text-align: center;
+    color:white;
+    padding: 30px;
+    text-shadow: 4px 4px black;
+
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;
+  color: black;
+}
+h3{
+  font-size: 24px;
+  text-align: left;
+  padding: 5px;
+  color: red;
+}
+p {
+  font-size: 18px;
+  padding: 0 30px;
+text-align: center;}
+
+h2#gallery{
+  font-size: 1.8em;
+  text-align: center;
+  padding: 50px;
+}
+    
+header{
+  background-attachment: fixed;     
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-size: cover;       
+  color: rgb(0, 0, 0);
+  height: 500px;                
+  grid-column: 1 / -1;  
+  grid-row: 1 / auto; 
+
+  background-color: blue;
+}
+
+
+img#header_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  animation-name: header_slide;
+  animation-duration: 15s;
+
+}
+
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+
+.gallery{
+  min-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery > img{
+  margin: 20px;
+  width: 300px;
+  border: 2px solid black;
+
+
+}
+
+.gallery > img:hover{
+  margin: 20px;
+  width: 300px;
+  border: 2px solid #3772FF;
+  opacity: 20%;
+  background: #EBEFF7;
+}
+
+img#logo{
+  display: flex;
+ justify-content: center;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+align-items: center;
+
+}
+
+
+.nav_links{
+    align-items: center;
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav_item a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav_item a:hover{
+    color: #476AF4;
+} 
+.nav_item a:focus{
+  color: #476AF4;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+
+}
+nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin-top: -2em;
+    margin-bottom: 2em;
+    font-size: 21px;
+
+}
+
+.active {
+
+  text-decoration: underline;
+}
+    
+    .underline {
+      display: block;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      height: var(--underline-height);
+      width: 20%;
+      background: black;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+      transition: transform var(--transition-duration) ease-in-out;
+}
+
+/* InFO */
+
+.info {
+  min-height: 400px;
+  max-width: 500 px;
+  margin: 50 px, auto;
+  background: #F3AC32;
+}
+
+.inner-info {
+ 
+  margin-bottom: 50px;
+}
+
+.inner-info .card {
+
+  padding: 40px;
+  background: white;
+border: 2px solid black;
+  margin-left: 20px;
+  margin-right: 1rem;
+  margin-top: .5rem;
+  margin-bottom:.5rem;
+
+}
+.inner-info .card img {
+  max-width: 80%;
+  margin: 15px;
+}
+
+.inner-info .card h3 {
+  margin: 10px 0 10px 0;
+  color: red;
+}
+
+.inner-info .card p {
+  text-align: left;
+  line-height: normal;
+}
+
+
+@-webkit-keyframes header_slide{
+
+}
+
+@keyframes header_slide{
+  10%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(25px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-50px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(50px, 0, 0);
+  }
+}
+
+/*ABout */
+.about {
+  display: grid;
+  min-height: 400px;
+
+
+}
+
+.inner-about {
+  display: grid;
+  grid-template-columns: 2;
+  grid-gap: 20 px;
+  margin-bottom: 50px;
+}
+
+.inner-about .card {
+  min-height: 300px;
+  max-width: 800px;
+  padding: 40px;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.inner-about .card h3 {
+  
+  color: orange;
+}
+
+.inner-about .card p {
+  margin-top: 10px;
+  text-align: left;
+  line-height: normal;
+}  
+
+.inner-about .card img {
+border: 2px solid black;
+} 
+
+/*CONTACT FORM */
+
+input {
+  width: 100%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #FF5F02;
+}
+
+input[type=submit] {
+  background-color: #476AF4;
+  color: white;
+  padding: 20px;
+  border: 2px solid black;
+
+  cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 20px; 
+  border: 2px solid black; /* Gray border */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Add a background color and some padding around the form */
+.container {
+  background-color: #FFCA04;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid black;
+}
+
+
+/*flip card*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  // border: 1px solid #f1f1f1;
+  // perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #008CCC;
+  background-color: azure;
+  color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #99CC66;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* New CSS selector */
+.flip-card.focus-within .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+
+/* CONTACT GRID*/
+.contact-class{
+  display: grid;
+}
+
+.contact-container{
+display: grid;
+grid-template-columns: 1 fr 1fr;
+grid-template-rows: auto;
+
+width: 95vw;
+}
+
+div{
+overflow: hidden;
+}
+
+.juice, .banana, .smoothie, .noodles, .toast {
+  padding: 20px;
+  max-width: 500px;
+
+
+}
+
+
+
+
+@media screen and (min-width: 600px){
+
+  .gallery > img{
+    width: 500px;
+  
+  
+  }
+  
+  .gallery > img:hover{
+    width: 500px;
+ 
+  }
+
+  img#logo{
+
+margin-bottom: 20px;
+  }
+  nav {
+
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin-top: -2em;
+    margin-bottom: 2em;
+    font-size: 21px;
+
+}
+
+
+  .inner-info .card {
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  
+  }
+  h1{
+
+    font-size: 4rem;
+  }
+  
+  h2{
+    font-size: 1em;
+    padding: 5px;
+   
+  }
+  h3{
+    font-size: 1em;
+    padding: 5px;
+  }
+  p {
+    font-size: 2rem;
+    padding: 0 30px;
+  text-align: center;}
+  
+
+
+  .nav_links{
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+}
+
+
+/*grid */
+.contact-container{
+  grid-template-columns:  1fr 1fr;
+grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+    }
+
+@media screen and (min-width: 1000px){
+  img#logo{
+
+    padding: 20px;
+    margin-left: 10px;
+
+  }
+  nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    white-space: nowrap;
+    padding: 0;
+    margin-top: -2em;
+    margin-bottom: 2em;
+    font-size: 21px;
+
+}
+
+/*grid contact*/
+.contact-container{    
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 400px 400px 400px 400px 400px ;
+  
+  }
+.juice{
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+
+.banana{
+  grid-column: 3/span 2;
+  grid-row: 1/span 2;
+
+}
+.smoothie{
+  grid-column: 3/span 2;
+  grid-row: 3/span 2;
+
+}
+  .noodles{
+    grid-column: 1/span 2;
+    grid-row: 3/span 3;
+
+}
+  .toast{
+    grid-column: 1/span 2;
+    grid-row: 5/span 3;
+  }
+
+
+
+@media print { 
+  .card {
+    flex-basis: 200px;
+ }
+    body:{
+        background-image: none;
+        
+    }
+
+    #gallery{
+        display: none;
+    }
+.gallery{
+    display: none;
+
+
+
+    
+}
+  }
+
+  
+  /*Your code here again.*/
+  /*You will want four selectors*/  
+
+
+/*Your code here again.*/ 
+/*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) { 
+  img#header_image{
+    animation-duration: 0s;
+  }
+
+
+  .flip-card-inner {
+    transition: transform none;
+}
+ 
+}
