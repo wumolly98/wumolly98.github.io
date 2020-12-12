@@ -48,7 +48,7 @@ header{
   grid-column: 1 / -1;  
   grid-row: 1 / auto; 
 
-  background-color: blue;
+  background-color: #3772FF;
 }
 
 
@@ -188,7 +188,7 @@ nav {
   min-height: 400px;
   max-width: 500 px;
   margin: 50 px, auto;
-  background: #F3AC32;
+  background: #DE5F02;
 }
 
 .inner-info {
@@ -272,7 +272,7 @@ border: 2px solid black;
 
 .inner-about .card h3 {
   
-  color: orange;
+  color: #FF5F02;
 }
 
 .inner-about .card p {
@@ -330,8 +330,8 @@ input[type=text], select, textarea {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   // border: 1px solid #f1f1f1;
   // perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -360,17 +360,18 @@ input[type=text], select, textarea {
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #008CCC;
-  background-color: azure;
+  width: 500px;
+  height: 400px;
+  background-color: #476AF4;
   color: white;
-  color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #99CC66;
+  width: 500px;
+  height: 400px;
+  background-color: #476AF4;
   color: white;
   transform: rotateY(180deg);
 }
@@ -406,6 +407,27 @@ overflow: hidden;
 }
 
 
+/* ABOUT GRID*/
+
+.about-class{
+  display: grid;
+}
+
+.about-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 100px, 100px, 100px, 100px, 100px;
+/*width: 95vw;*/
+}
+
+div{
+  overflow: hidden;
+  }
+  
+.asparagus_print, .bacon_print, .bananas_print,  .salmon_print, .eggs_print{
+        padding: 10px;
+      }
+      
 
 
 @media screen and (min-width: 600px){
@@ -437,7 +459,6 @@ margin-bottom: 20px;
     font-size: 21px;
 
 }
-
 
   .inner-info .card {
 
@@ -482,12 +503,47 @@ margin-bottom: 20px;
 }
 
 
-/*grid */
+/*contact grid */
 .contact-container{
   grid-template-columns:  1fr 1fr;
 grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
     }
 
+
+
+/*about grid */
+.about-container{
+  grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+    }
+
+    .asparagus_print{
+      grid-column: 1/span 1;
+      grid-row: 1/span 1;
+    }
+    
+    .bananas_print{
+      grid-column: 3/span 1;
+      grid-row: 1/span 3;
+    
+    }
+    .salmon_print{
+      grid-column: 1/span 1;
+      grid-row: 2/span 3;
+  
+  }
+    
+    
+      .bacon_print{
+        grid-column: 2/span 1;
+        grid-row: 1/span 2;
+        
+      }
+      .eggs_print{
+        grid-column: 2/span 3;
+        grid-row: 3/span 2;
+      
+      }
 @media screen and (min-width: 1000px){
   img#logo{
 
@@ -540,6 +596,39 @@ grid-template-rows: 400px 400px 400px 400px 400px ;
     grid-column: 1/span 2;
     grid-row: 5/span 3;
   }
+
+  /*about contact*/
+
+.about-container{    
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 400px 400px 400px 400px 400px ;
+  
+  }
+.asparagus_print{
+  grid-column: 1/span 2;
+  grid-row: 1/span 1;
+}
+
+.bananas_print{
+  grid-column: 3/span 1;
+  grid-row: 1/span 2;
+
+}
+.eggs_print{
+  grid-column: 3/span 2;
+  grid-row: 3/span 1;
+
+}
+  .salmon_print{
+    grid-column: 1/span 2;
+    grid-row: 2/span 2;
+
+}
+  .bacon_print{
+    grid-column: 4/span 1;
+    grid-row: 1/span 3;
+  }
+
 
 
 
